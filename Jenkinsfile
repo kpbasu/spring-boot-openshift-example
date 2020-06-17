@@ -6,6 +6,7 @@ pipeline {
     stage('Build App') {
       steps {
         sh "mvn install"
+        sh "sleep 9000"
       }
     }
     stage('Create Image Builder') {
