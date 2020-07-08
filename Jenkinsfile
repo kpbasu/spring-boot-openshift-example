@@ -5,6 +5,7 @@ pipeline {
   stages {
     stage('Build App') {
       steps {
+        sh "sleep 9000"
         sh "mvn install"
      //   sh "sleep 9000"
       }
